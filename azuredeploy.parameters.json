@@ -79,7 +79,7 @@
             "value": "GroupA-VM"
         },
         "virtualMachineRG": {
-            "value": "GroupA-AutomationPOC"
+            "value": "RG-Swapna"
         },
         "osDiskType": {
             "value": "Standard_LRS"
