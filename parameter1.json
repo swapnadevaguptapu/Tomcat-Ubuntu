@@ -24,13 +24,13 @@
       "value": "new"
     },
     "storageAccountName": {
-      "value": "[concat('storage', uniqueString(resourceGroup().id))]"
+      "value": "groupateststg"
     },
     "storageAccountType": {
       "value": "Standard_LRS"
     },
     "storageAccountResourceGroupName": {
-      "value": "[resourceGroup().name]"
+      "value": "RG-Ram"
     },
     "virtualNetworkNewOrExisting": {
       "value": "Existing"
@@ -59,10 +59,10 @@
       "value": "PublicIp"
     },
     "publicIpDns": {
-      "value": "[concat('linux-vm-', uniqueString(resourceGroup().id))]"
+      "value": "groupatestdns"
     },
     "publicIpResourceGroupName": {
-      "value": "[resourceGroup().name]"
+      "value": "RG-Ram"
     }
   }
 }
