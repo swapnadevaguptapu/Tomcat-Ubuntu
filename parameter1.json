@@ -24,7 +24,7 @@
       "value": "new"
     },
     "storageAccountName": {
-      "value": "groupateststg"
+      "value": "groupastorage"
     },
     "storageAccountType": {
       "value": "Standard_LRS"
@@ -56,10 +56,10 @@
       "value": "new"
     },
     "publicIpName": {
-      "value": "PublicIp"
+      "value": "groupapublicip"
     },
     "publicIpDns": {
-      "value": "groupatestdns"
+      "value": "groupapbdns"
     },
     "publicIpResourceGroupName": {
       "value": "RG-Ram"
