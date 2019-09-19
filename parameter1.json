@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "Central US"
+    },
+    "vmName": {
+      "value": "linux-vm"
+    },
+    "adminUsername": {
+      "value": "toor"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "adminPasswordOrKey": {
+      "value": "Password@123"
+    },
+    "vmSize": {
+      "value": "Standard_A2_v2"
+    },
+    "storageNewOrExisting": {
+      "value": "new"
+    },
+    "storageAccountName": {
+      "value": "[concat('storage', uniqueString(resourceGroup().id))]"
+    },
+    "storageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "storageAccountResourceGroupName": {
+      "value": "[resourceGroup().name]"
+    },
+    "virtualNetworkNewOrExisting": {
+      "value": "Existing"
+    },
+    "virtualNetworkName": {
+      "value": "VNET-POC"
+    },
+    "addressPrefixes": {
+      "value": [
+        "10.0.0.0/24"
+      ]
+    },
+    "subnetName": {
+      "value": "Subnet-POC"
+    },
+    "subnetPrefix": {
+      "value": "10.0.0.0/24"
+    },
+    "virtualNetworkResourceGroupName": {
+      "value": "RG-Ram"
+    },
+    "publicIpNewOrExisting": {
+      "value": "new"
+    },
+    "publicIpName": {
+      "value": "PublicIp"
+    },
+    "publicIpDns": {
+      "value": "[concat('linux-vm-', uniqueString(resourceGroup().id))]"
+    },
+    "publicIpResourceGroupName": {
+      "value": "[resourceGroup().name]"
+    }
+  }
+}
